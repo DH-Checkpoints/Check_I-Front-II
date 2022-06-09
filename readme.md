@@ -1,5 +1,6 @@
 # Checkpoint I
 
 - Gabriel Azevedo Silva
-- Luiz Vagner
+- Luiz Vagner da Silva
+- Fábio Augusto Silva 
 
