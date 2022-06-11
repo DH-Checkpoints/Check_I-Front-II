@@ -45,7 +45,7 @@ header h2 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  
+
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -55,7 +55,7 @@ header h2 {
   width: 48%;
   background: #1f1f1f;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 
   padding: 0 1.8rem;
 
@@ -73,24 +73,39 @@ header h2 {
 .div-form form input::placeholder {
   color: rgba(255, 255, 255, 0.6);
   font-size: 1.2rem;
-
 }
 
-.button-form{
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #1f1f1f inset;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+}
+
+
+
+.button-form {
   display: flex;
   justify-content: flex-end;
   width: 100%;
 }
-
 
 .button-form button {
   /* width: 31.2rem; */
   min-width: 25.3rem;
   height: 2.8rem;
 
-
   background: #27ae60;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   color: rgba(255, 255, 255);
 
   font-weight: 700;
@@ -161,12 +176,11 @@ header h2 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 .banner img {
   height: inherit;
-  
+
   border-radius: inherit;
 }
 
@@ -229,10 +243,26 @@ header h2 {
   gap: 20px;
   align-items: center;
   justify-content: center;
-
-  
 }
 
-.redes a{
+.redes a {
   color: #479b4a;
+}
+
+/*================= MEDIA QUERIES ===================*/
+
+@media screen and (max-width: 767px) {
+  .div-form form {
+    flex-direction: column;
+  }
+
+  .div-form form input {
+    height: 2.8rem;
+    width: 100%;
+  }
+
+  .button-form button {
+  width: 100%;
+    height: 2.8rem;
+  }
 }
