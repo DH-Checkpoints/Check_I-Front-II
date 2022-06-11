@@ -9,7 +9,7 @@ let inputBanner = document.querySelector('#banner')
 let inputGithub = document.querySelector('#github')
 let inputNome = document.querySelector('#nome')
 let inputOcupacao = document.querySelector('#ocupacao')
-let inputTelefone = document.querySelector('#Telefone')
+let inputTelefone = document.querySelector('#telefone')
 let inputEmail = document.querySelector('#email')
 let inputPortifolio = document.querySelector('#portifolio')
 let inputCidade = document.querySelector('#cidade')
@@ -27,27 +27,38 @@ novaPostagemElemento.addEventListener('click', event => {
     <div class="banner" style="background-image: url('${inputBanner.value}');"></div>
 
     <div class="img-github">
-      <img src="https://www.github.com/github.png" alt="" />
+      <img src="https://www.github.com/${inputGithub.value}.png" alt="" />
     </div>
 
     <div class="apresentacao">
-      <h2>Variável nome aqui </h2>
-      <h3>variável ocupação aqui</h3>
+      <h2>${inputNome.value} </h2>
+      <h3>${inputOcupacao.value}</h3>
     </div>
     <div class="info">
-      <i class="fa-solid fa-envelope"> <span> variável </span> </i>
-      <i class="fa-solid fa-phone-flip"> <span>+55 variável</span> </i>
-      <i class="fa-solid fa-globe"> <span> variável  </span> </i>
-      <i class="fa-solid fa-location-dot"> <span> variável </span> </i>
+      <i class="fa-solid fa-envelope"> <span>${inputEmail.value}</span></i>
+      <i class="fa-solid fa-phone-flip"> <span>+55${inputTelefone.value}</span></i>
+      <i class="fa-solid fa-globe"> <span><a href="${inputPortifolio.value}" target ="blanc_">${inputPortifolio.value}</a> </span></i>
+      <i class="fa-solid fa-location-dot"> <span>${inputCidade.value}</span></i>
     </div>
 
     <div class="redes">
-      <a class="fa-brands fa-github" href="https://www.github.com/variável" target="_blank"></a>
-      <a class="fa-brands fa-instagram" href="variável" target="_blank"></a>
-      <a class="fa-brands fa-linkedin" href="variável" target="_blank"></a>
+      <a class="fa-brands fa-github" href="https://www.github.com/${inputGithub.value}" target="_blank"></a>
+      <a class="fa-brands fa-instagram" href="${inputInstagram.value}" target="_blank"></a>
+      <a class="fa-brands fa-linkedin" href="${inputLinkedin.value}" target="_blank"></a>
     </div>
   </div>
         `
 
   //////////// Para limpar os campos de inout depois de enviar
+
+  inputBanner.value = ""
+  inputGithub.value = ""
+  inputNome.value = ""
+  inputOcupacao.value = ""
+  inputTelefone.value = ""
+  inputEmail.value = ""
+  inputPortifolio.value = ""
+  inputCidade.value = ""
+  inputInstagram.value = ""
+  inputLinkedin.value = ""
 })
