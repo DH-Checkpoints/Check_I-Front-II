@@ -1,3 +1,9 @@
+
+/// Biblioteca de animação 
+// https://michalsnik.github.io/aos/
+
+
+
 /// Método trim para reomver os espaços antes e após uma string - .trim()
 
 ///////////// Variáveis que armazenam a classe e o id que estão no HTML
@@ -20,24 +26,24 @@ let inputLinkedin = document.querySelector('#linkedin')
 ///////Inserindo posts principais que serão carregados na página ao ser acessada
 let postsPrincipais = [
   {
-    campoBanner:"",
+    campoBanner:"https://i.gifer.com/6Tj6.gif",
     campoGithubFoto:"https://github.com/gabazevdo.png",
     campoNome:"Gabriel Azevedo",
-    campoOcupacao:"",
-    campoTelefone:"",
-    campoEmail:"",
-    campoPortifolio:"",
-    campoCidade:"",
-    campoGithub:"",
-    campoInstagram:"",
-    campoLinkedin:""
+    campoOcupacao:"FronEnd Developer",
+    campoTelefone:" 11 99265-9072",
+    campoEmail:"gbldja@gmail.com",
+    campoPortifolio:"https://gabazevdo.github.io/codelandia/",
+    campoCidade:"Itapevi/SP",
+    campoGithub:"https://www.github.com/gabazevdo",
+    campoInstagram:"https://www.instagram.com/gabazevdo",
+    campoLinkedin:"https://www.linkedin.com/in/gabazevdo"
   },
   {
     campoBanner:"https://l3software.com.br/wp-content/uploads/2019/03/jscrambler.jpg",
     campoGithubFoto:"https://github.com/lvs1981.png",
     campoNome:"Luiz Vagner",
     campoOcupacao:"Analista de Processos",
-    campoTelefone:"11955554444",
+    campoTelefone:" 11 95555-4444",
     campoEmail:"l.vagner1981@hotmail.com",
     campoPortifolio:"https://lvs1981.github.io/lvs1981-Ckeckpoint_II_Front_I/",
     campoCidade:"Taboão da Serra",
@@ -94,6 +100,20 @@ for(var postPrincipal of postsPrincipais){
 novaPostagemElemento.addEventListener('click', event => {
   // Para evitar o recarregamento da página no momento em que o botão de dentro do formulário é clicado.
   event.preventDefault()
+
+  if(inputBanner.value == ''){ inputBanner.value = 'https://i.gifer.com/4V2C.gif' }
+  if(inputGithub.value == ''){ inputGithub.value = 'dracula' }
+  if(!inputNome == ''){ inputNome.value = 'Dracula' }
+  if(!inputOcupacao == ''){ inputOcupacao.value = 'Theme VsCode' }
+  if(!inputEmail == ''){ inputEmail.value = 'zeno@draculatheme.com' }
+  if(!inputTelefone == ''){ inputTelefone.value = ' 11 99999-9999' }
+  if(!inputPortifolio == ''){ inputPortifolio.value = 'https://draculatheme.com/about' }
+  if(!inputCidade == ''){ inputCidade.value = 'Dracula é do Brasil' }
+  if(!inputInstagram == ''){ inputInstagram.value = 'https://www.instagram.com/explore/tags/draculatheme/' }
+  if(!inputInstagram == ''){ inputInstagram.value = 'https://www.linkedin.com/' }
+
+
+
 
   containerElemento.innerHTML += `
   <div class="card">
