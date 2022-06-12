@@ -217,6 +217,7 @@ select:-webkit-autofill:focus {
 .apresentacao h2 {
   font-size: 2.4rem;
   color: var(--color-text-name);
+  text-align: center;
 }
 
 .apresentacao h3 {
