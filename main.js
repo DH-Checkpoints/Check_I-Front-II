@@ -94,6 +94,9 @@ for(var postPrincipal of postsPrincipais){
         `
 
 }
+
+
+
 ///////////// Inserindo um novo post depois de preencher o formulário
 // Utilizando o event listenner para adicionar. E nessa caso, foi removido o onclick do botao lá no html
 
@@ -101,18 +104,19 @@ novaPostagemElemento.addEventListener('click', event => {
   // Para evitar o recarregamento da página no momento em que o botão de dentro do formulário é clicado.
   event.preventDefault()
 
+
+
   if(inputBanner.value == ''){ inputBanner.value = 'https://i.gifer.com/4V2C.gif' }
   if(inputGithub.value == ''){ inputGithub.value = 'dracula' }
-  if(!inputNome == ''){ inputNome.value = 'Dracula' }
-  if(!inputOcupacao == ''){ inputOcupacao.value = 'Theme VsCode' }
-  if(!inputEmail == ''){ inputEmail.value = 'zeno@draculatheme.com' }
-  if(!inputTelefone == ''){ inputTelefone.value = ' 11 99999-9999' }
-  if(!inputPortifolio == ''){ inputPortifolio.value = 'https://draculatheme.com/about' }
-  if(!inputCidade == ''){ inputCidade.value = 'Dracula é do Brasil' }
-  if(!inputInstagram == ''){ inputInstagram.value = 'https://www.instagram.com/explore/tags/draculatheme/' }
-  if(!inputInstagram == ''){ inputInstagram.value = 'https://www.linkedin.com/' }
-
-
+  if(inputNome.value == ''){ inputNome.value = 'Dracula' }
+  if(inputOcupacao.value == ''){ inputOcupacao.value = 'Theme VsCode' }
+  if(inputEmail.value == ''){ inputEmail.value = 'zeno@draculatheme.com' }
+  if(inputTelefone.value == ''){ inputTelefone.value = ' 11 99999-9999' }
+  if(inputPortifolio.value == ''){ inputPortifolio.value = 'https://draculatheme.com/about' }
+  if(inputCidade.value == ''){ inputCidade.value = 'Dracula é do Brasil' }
+  if(inputInstagram.value == ''){ inputInstagram.value = 'https://www.instagram.com/explore/tags/draculatheme/' }
+  if(inputInstagram.value == ''){ inputInstagram.value = 'https://www.linkedin.com/' }
+  
 
 
   containerElemento.innerHTML += `
