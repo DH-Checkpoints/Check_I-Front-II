@@ -81,7 +81,7 @@ for(var postPrincipal of postsPrincipais){
     <div class="info">
       <i class="fa-solid fa-envelope"> <span>${postPrincipal.campoEmail}</span></i>
       <i class="fa-solid fa-phone-flip"> <span>+55${postPrincipal.campoTelefone}</span></i>
-      <i class="fa-solid fa-globe"> <span><a href="${postPrincipal.campoPortifolio}" target ="blanc_">Portifólio</a> </span></i>
+      <i class="fa-solid fa-globe"> <span><a href="${postPrincipal.campoPortifolio}" target ="blanc_">Site / Portifólio</a> </span></i>
       <i class="fa-solid fa-location-dot"> <span>${postPrincipal.campoCidade}</span></i>
     </div>
 
@@ -130,7 +130,7 @@ novaPostagemElemento.addEventListener('click', event => {
     <div class="info">
       <i class="fa-solid fa-envelope"> <span>${inputEmail.value}</span></i>
       <i class="fa-solid fa-phone-flip"> <span>+55${inputTelefone.value}</span></i>
-      <i class="fa-solid fa-globe"> <span><a href="${inputPortifolio.value}" target ="blanc_">${inputPortifolio.value}</a> </span></i>
+      <i class="fa-solid fa-globe"> <span><a href="${inputPortifolio.value}" target ="blanc_">Site / Portifólio </a> </span></i>
       <i class="fa-solid fa-location-dot"> <span>${inputCidade.value}</span></i>
     </div>
 
