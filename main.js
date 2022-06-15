@@ -52,17 +52,17 @@ let postsPrincipais = [
     campoLinkedin:"https://www.linkedin.com/in/luiz-vagner-da-silva-3737a9150/"
   },
   {
-    campoBanner:"",
+    campoBanner:"https://i.gifer.com/4eVl.gif",
     campoGithubFoto:"https://github.com/FabioCTD.png",
-    campoNome:"",
-    campoOcupacao:"",
-    campoTelefone:"",
-    campoEmail:"",
-    campoPortifolio:"",
-    campoCidade:"",
-    campoGithub: "",
-    campoInstagram:"",
-    campoLinkedin:""
+    campoNome:"Fábio Augusto",
+    campoOcupacao:"Analista de Negócios",
+    campoTelefone:"11 95779-7010",
+    campoEmail:"fabioaugustoctd@gmail.com",
+    campoPortifolio:"https://www.ogenio.com.br",
+    campoCidade:"São Paulo/SP",
+    campoGithub:"https://github.com/FabioCTD",
+    campoInstagram:"https://www.instagram.com/fabioaugustosp/",
+    campoLinkedin:"https://www.linkedin.com/in/f%C3%A1bio-augusto-sp/"
   }
 ]
 for(var postPrincipal of postsPrincipais){
