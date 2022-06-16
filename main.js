@@ -39,11 +39,11 @@ let postsPrincipais = [
     campoLinkedin:"https://www.linkedin.com/in/gabazevdo"
   },
   {
-    campoBanner:"https://l3software.com.br/wp-content/uploads/2019/03/jscrambler.jpg",
+    campoBanner:"http://4.bp.blogspot.com/_NgrHxuIRrM8/TY_HxniFKwI/AAAAAAAAACA/zIvrkNRD3WY/rogerio-ceni-100-gols.gif",
     campoGithubFoto:"https://github.com/lvs1981.png",
     campoNome:"Luiz Vagner",
     campoOcupacao:"Analista de Processos",
-    campoTelefone:" 11 95555-4444",
+    campoTelefone:" 11 95479-7213",
     campoEmail:"l.vagner1981@hotmail.com",
     campoPortifolio:"https://lvs1981.github.io/lvs1981-Ckeckpoint_II_Front_I/",
     campoCidade:"Taboão da Serra",
