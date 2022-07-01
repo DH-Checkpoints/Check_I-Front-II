@@ -31,7 +31,7 @@ Você pode acrescentar outros campos ao formulário para deixar a aplicação ma
    ![print](https://user-images.githubusercontent.com/16105546/173692620-7ffcb31a-5125-471f-bab0-0059b2464467.png)
 
 
-[Clique aqui](https://gabazevdo.github.io/Check_I-Front-II/) e faça seu card!
+[Clique aqui](https://dh-checkpoints.github.io/Check_I-Front-II/) e faça seu card!
 
 ## Integrantes do grupo
 
